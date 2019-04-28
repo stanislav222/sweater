@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+Login form
+<form action="/login" method="post">
+    <div><label for="">Введите логин<input type="text" name="username" placeholder="Логин"></label></div>
+    <div><label for="">Введите пароль<input type="password" name="password" placeholder="Пароль"></label></div>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+    <button type="submit">Вход</button>
+</form>
+<a href="/registration">Регистрицаия нового пользователя</a>
+</body>
+</html>

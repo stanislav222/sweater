@@ -3,6 +3,7 @@
 
 <@mainTemplates.page>
     <@l.logout/>
+    <label>Список пользователей <a href="/user">перейти</a></label>
     <div>
         <form method="post" action="/main">
             <input type="text" name="text" placeholder="Введите сообщение"/>

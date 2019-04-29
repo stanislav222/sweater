@@ -11,7 +11,7 @@
 <div>
     <form action="/logout" method="post">
         <input type="submit" value="Выйти"/>
-        <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+        <input type="hidden" name="_csrf" value="${_csrf.token}"/> <!-- токен нужен только для пост запросов ????-->
     </form>
 </div>
 </#macro>
